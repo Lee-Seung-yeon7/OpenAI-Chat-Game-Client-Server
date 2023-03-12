@@ -55,7 +55,7 @@ body {
   justify-content: center;
 }
 
-.terminal-form input[type="text"] {
+.terminal-form input[type='text'] {
   flex: 1;
   margin-right: 10px;
   font-family: var(--font-family);
@@ -69,7 +69,7 @@ body {
   caret-color: var(--text-color);
 }
 
-.terminal-form input[type="submit"] {
+.terminal-form input[type='submit'] {
   font-family: var(--font-family);
   font-size: var(--font-size);
   padding: 5px 10px;
@@ -79,7 +79,7 @@ body {
   cursor: pointer;
 }
 
-.terminal-form input[type="text"]::placeholder {
+.terminal-form input[type='text']::placeholder {
   color: var(--text-color);
 }
 
@@ -93,7 +93,7 @@ body {
   font-size: 16px;
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   background-color: var(--background-color);
   color: var(--text-color);
 }
