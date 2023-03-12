@@ -1,5 +1,4 @@
 // Select DOM elements
-//Test
 const terminal = document.querySelector(".terminal");
 const terminalText = document.querySelector(".terminal-text");
 const form = document.querySelector("form");
