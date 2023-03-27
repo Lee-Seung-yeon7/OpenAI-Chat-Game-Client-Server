@@ -92,7 +92,7 @@ form.addEventListener("submit", (event) => {
   const headers = {
     "Content-Type": "application/x-www-form-urlencoded",
   };
-  fetch("script.php", {
+  fetch("http://localhost:8000/chat", {
     method: "POST",
     headers: headers,
     body: new URLSearchParams(data),

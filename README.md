@@ -1,5 +1,18 @@
 # OpenAI-Game - A web game made with the OpenAI API
 ## How to Configure and Run
+
+<div class="callout">
+  <p>This is important information that you should pay attention to.</p>
+</div>
+
+<style>
+.callout {
+  background-color: yellow;
+  border: 2px solid black;
+  padding: 10px;
+}
+</style>
+
 ### Using a local machine and environment variables
 1. Clone or download this repo 
 2. Set the environment varialbe for OPENAI_API_KEY to your OpenAI API Key

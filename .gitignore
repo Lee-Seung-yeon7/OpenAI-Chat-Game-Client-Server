@@ -1,2 +1,6 @@
 # Vendor files for the AWS php library (for more details see https://docs.aws.amazon.com/sdk-for-php/v3/developer-guide/getting-started_installation.html)
 /vendor
+node_modules/
+package-lock.json
+.env
+.DS_Store
