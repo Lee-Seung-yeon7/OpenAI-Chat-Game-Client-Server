@@ -2,6 +2,8 @@
 ## How to Configure and Run
 
 {% note %}
+Test
+{% endnote %}
 
 ### Using a local machine and environment variables
 1. Clone or download this repo 
