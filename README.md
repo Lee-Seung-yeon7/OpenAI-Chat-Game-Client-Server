@@ -1,5 +1,5 @@
 # OpenAI-Game - A web game made with the OpenAI API
-## Note: This app previously used PHP and was recently upgraded to NodeJS. The old PHP is in script.php.old and is no longer used. If you would like to use PHP, you can rename this file to script.php and modify the submit.js to fetch from script.php amd see Old Instructions for PHP.
+### Note: This app previously used PHP and was recently upgraded to NodeJS. The old PHP is in script.php.old and is no longer used. If you would like to use PHP, you can rename this file to script.php and modify the submit.js to fetch from script.php amd see Old Instructions for PHP.
 ## How to Configure and Run
 ### Using a local machine and environment variables
 1. Clone or download this repo 
