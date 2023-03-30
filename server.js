@@ -4,7 +4,7 @@ const { Configuration, OpenAIApi } = require('openai');
 const dotenv = require('dotenv');
 const PORT = 8000
 const cors = require('cors');
-const { SSMClient } = require("@aws-sdk/client-ssm");
+const { SSMClient, GetParameterCommand } = require("@aws-sdk/client-ssm");
 
 dotenv.config();
 
@@ -13,14 +13,15 @@ const UseAWS = false;
 async function GetAPIKey() {
     const parameterName = 'OPENAI_API_KEY';
     if (UseAWS) {
-      const client = new SSMClient({ region: "us-west-2"});
-      const Parameter = await client.getParameter({
-        Name: parameterName,
-        WithDecryption: true,
-      }).promise()
-      return Parameter
-        } else {
-      return process.env[parameterName];
+        const client = new SSMClient({ region: "us-west-2"});
+        const command = new GetParameterCommand({
+            Name: parameterName,
+            WithDecryption: true,
+        });
+        const response = await client.send(command);
+        return response.Parameter.Value;
+    } else {
+        return process.env[parameterName];
     }
 }
 
